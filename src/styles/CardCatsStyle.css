@@ -1,41 +1,47 @@
-/* CSS pour la page CATS */
-.header-cat h2{
-  text-align: center;
+/* name cat */
+h2{
+  text-align: left;
   text-transform: uppercase;
   color: #7FB3D5;
 }
-.cat{
-  text-align: center;
-  margin-block: 0;
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 400px;
 
-}
-.cat p{
-  font-size: 15px;
-}
-.cat h3{
-  text-transform: uppercase;
-}
-.body-cat img{
+/* image cat */
+.cat img{
   width: 500px;
   height: 350px;
   object-fit: cover;
+  padding: 25px 30px;
+} 
+
+/* description cat */
+.cat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px; 
 }
-.info-cat button{
-  background-color: #7FB3D5;
-  border: 0;
-  border-radius: 3px;
-  padding: 10px;
-  font-weight: bold;
-  transition: all 200ms ease-in-out;
-  cursor:pointer;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+.cat .info-cat{
+  text-align: left;
+  margin-block: 0;
+  max-width: 500px;
+  padding : 2px 4px;
 }
-.info-cat button:hover{
-  background-color: #A9CCE3;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  transform: translateY(-2px);
+
+.cat .info-cat p{
+  font-size: 15px;
 }
+.cat .info-cat h3{
+  text-transform: uppercase;
+  margin-block: 0;
+}
+
+/* table */
+.table{
+  border: 2x solid black;
+}
+

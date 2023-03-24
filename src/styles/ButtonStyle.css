@@ -1,0 +1,27 @@
+/* button */
+.button-cat{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+button{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; 
+  background-color: #abd3ed;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+  cursor:pointer;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+button:hover{
+  background-color: #cbe5f6;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  transform: translateY(-2px);
+}

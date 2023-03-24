@@ -1,0 +1,23 @@
+/* CSS pour la page HOME */
+
+.header p{
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.header h1{
+  text-align: center;
+  color: #7FB3D5;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px; 
+  
+}
+
+

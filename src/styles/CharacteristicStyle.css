@@ -1,32 +1,30 @@
-.table h2{
-  text-align: center;
-  text-transform: uppercase;
-  color: rgb(12, 11, 11);
-}
-
-
-.table-cat .title{
-  font-weight: bold;
-  
-}
-td{
-  border: 1px solid black;
-  padding: 20px;
-}
-.table-cat{
-  border-collapse: collapse;
-  text-align: center;
-}
-th {
-  border: 1px solid black;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-.table{
+.characteristic{
   align-items: center;
   display: flex;
   flex-direction: column;
   background-color: #dbecf7;;
   padding-bottom: 23px;
+}
+.characteristic h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(12, 11, 11);
+}
+
+.characteristic .title{
+  font-weight: bold;
+  
+}
+table{
+  border-collapse: collapse;
+  text-align: center;
+}
+td{
+  border: 1px solid black;
+  padding: 20px;
+}
+  th {
+  border: 1px solid black;
+  text-transform: uppercase;
+  padding: 10px;
 }

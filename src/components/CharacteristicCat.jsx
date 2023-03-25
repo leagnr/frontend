@@ -5,26 +5,24 @@ import '../styles/CharacteristicStyle.css'
 
 
 function CharacteristicCat () {
+const [cats, setCats] = useState()
 
-  const [cats, setCats] = useState()
+useEffect(() => {
+  const loadData = async () => {
+  const response = await axios.get('https://api.thecatapi.com/v1/images/search?has_breeds=1&api_key=live_mtl9hrEB87yKSbY11iXEkgFZtnsMeZtj2VhYQIJkQNOnRwIJkMleFZlmgHLyDF7p') 
+  if (response.status === 200) {
+    const data = response.data[0]
+    setCats(data)
+  }
+  }
+loadData()
+}, [])
 
-//methode pour recuperer les donnees depuis l'API
-  useEffect(() => {
-    const loadData = async () => {
-      const response = await axios.get('https://api.thecatapi.com/v1/images/search?has_breeds=1&api_key=live_mtl9hrEB87yKSbY11iXEkgFZtnsMeZtj2VhYQIJkQNOnRwIJkMleFZlmgHLyDF7p') 
+return cats &&(
+  <div className='characteristic'>
+    <h2>Les caractéristiques du chats</h2>
 
-      if (response.status === 200) {
-        const data = response.data[0]
-        setCats(data)
-      }
-    }
-  }, [])
-
-  return cats &&(
-    <div className='table'>
-      <h2>Les caractéristiques du chats</h2>
-    
-      <table className='table-cat'>
+      <table>
           <thead>
             <th>Attributs</th>
             <th>Note</th>
@@ -60,7 +58,7 @@ function CharacteristicCat () {
             </tr>
           </tbody>
       </table>
-    </div>
+  </div>
   )
-  }
-  export default CharacteristicCat   
+}
+export default CharacteristicCat   

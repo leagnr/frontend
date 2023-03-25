@@ -1,1 +1,8 @@
+/* image cat */
+.card img{
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  padding: 25px 30px;
+} 
 

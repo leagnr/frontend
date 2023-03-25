@@ -1,7 +1,7 @@
-import Button from '../components/Button'
 import CardCats from '../components/CardCats'
-import CharacteristicCat from '../components/CharacteristicCat'
 import '../styles/HomeStyle.css'
+//import CharacteristicCat from '../components/CharacteristicCat'
+//import Button from '../components/Button'
 
 
 function Home(cats) {
@@ -13,10 +13,11 @@ return cats && (
     </div>
 
   <div>
-    {/* Mes 3 components sont appelés dans cette page */}
       <CardCats/>
-      <CharacteristicCat/>
-      <Button/>
+      {/*  J'ai créer des components pour diviser mon code, mais lorsque je l'ai affiche, la page ne refresh pas, j'ai donc tous réunie sur une seule page pour cela fonctionne     
+      <CharacteristicCat/>   
+      <Button/>  */}
+  
   </div>
   </>
   )
